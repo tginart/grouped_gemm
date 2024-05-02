@@ -27,7 +27,7 @@ Grouped GEMM for MoE
 
 ## pip install
 ```bash
-pip install --verbose git+https://github.com/fanshiqing/grouped_gemm@main
+pip install --verbose git+https://github.com/tginart/grouped_gemm@main
 ```
 
 ## Build from Source
