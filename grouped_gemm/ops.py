@@ -242,6 +242,8 @@ class UnpermuteMoE_topK(torch.autograd.Function):
     return act_grad, None, prob_grad
 
 def permute(input_act, indices, max_token_num=0):
+    print(f"input_act type: {input_act.dtype}")
+    print(f"indices type: {indices.dtype}")
   return PermuteMoE_topK.apply(input_act, indices, max_token_num)
 
 def unpermute(input_act, row_id_map, probs=None):
